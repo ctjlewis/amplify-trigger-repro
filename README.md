@@ -1,4 +1,4 @@
-# NextJS Test Project for `amplify dev` 
+# NextJS Test Project for `amplify-dev` 
 
 An example NextJS project to be used for testing the local development version
 of Amplify CLI with `amplify-dev`.
