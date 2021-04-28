@@ -5,8 +5,8 @@ import Amplify from 'aws-amplify'
 import amplifyConfig from '../aws-exports'
 Amplify.configure(amplifyConfig);
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default withAuthenticator(MyApp);
