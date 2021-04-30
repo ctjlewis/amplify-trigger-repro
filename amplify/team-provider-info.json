@@ -1,34 +1,33 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cftrigger-dev-234621-authRole",
-      "UnauthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-authRole",
+      "AuthRoleName": "amplify-cfpatched-dev-35621-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381430693017:role/amplify-cfpatched-dev-35621-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381430693017:role/amplify-cfpatched-dev-35621-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-      "UnauthRoleName": "amplify-cftrigger-dev-234621-unauthRole",
-      "StackName": "amplify-cftrigger-dev-234621",
-      "StackId": "arn:aws:cloudformation:us-east-1:381430693017:stack/amplify-cftrigger-dev-234621/05a5ad60-a96f-11eb-963c-12b4aab3bd0b",
-      "AmplifyAppId": "d1zhxaps2q4i4c"
+      "DeploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+      "UnauthRoleName": "amplify-cfpatched-dev-35621-unauthRole",
+      "StackName": "amplify-cfpatched-dev-35621",
+      "StackId": "arn:aws:cloudformation:us-east-1:381430693017:stack/amplify-cfpatched-dev-35621/f1c12090-a991-11eb-8c7d-0e8cca71e1bd",
+      "AmplifyAppId": "d3je70brsbx4e9"
     },
     "categories": {
-      "auth": {
-        "cftriggerd0e2e9b5": {},
-        "cftrigger09153350": {}
-      },
       "function": {
-        "cftrigger09153350CustomMessage": {
+        "cfpatched7bdf8ebfCustomMessage": {
           "REDIRECTURL": "http://localhost:3000",
           "EMAILSUBJECT": "Confirm your email",
-          "EMAILMESSAGE": "Click this link to confirm your account:",
-          "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-          "s3Key": "amplify-builds/cftrigger09153350CustomMessage-5336656c385a362b6642-build.zip"
+          "EMAILMESSAGE": "Confirm your email with this link: ",
+          "deploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+          "s3Key": "amplify-builds/cfpatched7bdf8ebfCustomMessage-784f686532796e494c35-build.zip"
         },
-        "cftrigger09153350PostConfirmation": {
+        "cfpatched7bdf8ebfPostConfirmation": {
           "GROUP": "users",
-          "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-          "s3Key": "amplify-builds/cftrigger09153350PostConfirmation-742b71544d7941527079-build.zip"
+          "deploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+          "s3Key": "amplify-builds/cfpatched7bdf8ebfPostConfirmation-69485643425a4b786e38-build.zip"
         }
+      },
+      "auth": {
+        "cfpatched7bdf8ebf": {}
       }
     }
   }

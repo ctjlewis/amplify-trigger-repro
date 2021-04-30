@@ -1,12 +1,24 @@
 {
+  "function": {
+    "cfpatched7bdf8ebfCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "cfpatched7bdf8ebfPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "auth": {
-    "cftrigger09153350": {
+    "cfpatched7bdf8ebf": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "cftrigger09153350CustomMessage",
+          "resourceName": "cfpatched7bdf8ebfCustomMessage",
           "triggerProvider": "Cognito",
           "attributes": [
             "Arn",
@@ -15,7 +27,7 @@
         },
         {
           "category": "function",
-          "resourceName": "cftrigger09153350PostConfirmation",
+          "resourceName": "cfpatched7bdf8ebfPostConfirmation",
           "triggerProvider": "Cognito",
           "attributes": [
             "Arn",
@@ -24,18 +36,6 @@
         }
       ],
       "customAuth": false
-    }
-  },
-  "function": {
-    "cftrigger09153350CustomMessage": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "cftrigger09153350PostConfirmation": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
     }
   }
 }

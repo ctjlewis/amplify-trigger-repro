@@ -1,25 +1,75 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cftrigger-dev-234621-authRole",
-      "UnauthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-authRole",
+      "AuthRoleName": "amplify-cfpatched-dev-35621-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381430693017:role/amplify-cfpatched-dev-35621-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381430693017:role/amplify-cfpatched-dev-35621-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-      "UnauthRoleName": "amplify-cftrigger-dev-234621-unauthRole",
-      "StackName": "amplify-cftrigger-dev-234621",
-      "StackId": "arn:aws:cloudformation:us-east-1:381430693017:stack/amplify-cftrigger-dev-234621/05a5ad60-a96f-11eb-963c-12b4aab3bd0b",
-      "AmplifyAppId": "d1zhxaps2q4i4c"
+      "DeploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+      "UnauthRoleName": "amplify-cfpatched-dev-35621-unauthRole",
+      "StackName": "amplify-cfpatched-dev-35621",
+      "StackId": "arn:aws:cloudformation:us-east-1:381430693017:stack/amplify-cfpatched-dev-35621/f1c12090-a991-11eb-8c7d-0e8cca71e1bd",
+      "AmplifyAppId": "d3je70brsbx4e9"
+    }
+  },
+  "function": {
+    "cfpatched7bdf8ebfCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2021-04-30T09:19:21.654Z",
+      "lastPackageTimeStamp": "2021-04-30T09:19:21.709Z",
+      "distZipFilename": "cfpatched7bdf8ebfCustomMessage-784f686532796e494c35-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+        "s3Key": "amplify-builds/cfpatched7bdf8ebfCustomMessage-784f686532796e494c35-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cfpatched-dev-35621-deployment/amplify-cfn-templates/function/cfpatched7bdf8ebfCustomMessage-cloudformation-template.json",
+        "logicalId": "functioncfpatched7bdf8ebfCustomMessage"
+      },
+      "lastPushTimeStamp": "2021-04-30T09:20:29.022Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:381430693017:function:cfpatched7bdf8ebfCustomMessage-dev",
+        "Name": "cfpatched7bdf8ebfCustomMessage-dev",
+        "LambdaExecutionRole": "cfpatched7bdf8ebfCustomMessage-dev"
+      },
+      "lastPushDirHash": "lHaofKGWqH7U8PjXT/3Irg3o2iQ="
+    },
+    "cfpatched7bdf8ebfPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2021-04-30T09:11:01.824Z",
+      "lastPackageTimeStamp": "2021-04-30T09:11:01.998Z",
+      "distZipFilename": "cfpatched7bdf8ebfPostConfirmation-69485643425a4b786e38-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-cfpatched-dev-35621-deployment",
+        "s3Key": "amplify-builds/cfpatched7bdf8ebfPostConfirmation-69485643425a4b786e38-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cfpatched-dev-35621-deployment/amplify-cfn-templates/function/cfpatched7bdf8ebfPostConfirmation-cloudformation-template.json",
+        "logicalId": "functioncfpatched7bdf8ebfPostConfirmation"
+      },
+      "lastPushTimeStamp": "2021-04-30T09:20:29.017Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:381430693017:function:cfpatched7bdf8ebfPostConfirmation-dev",
+        "Name": "cfpatched7bdf8ebfPostConfirmation-dev",
+        "LambdaExecutionRole": "cfpatched7bdf8ebfPostConfirmation-dev"
+      },
+      "lastPushDirHash": "o/hb595ONaKRBvLRv1DmiUqIeXE="
     }
   },
   "auth": {
-    "cftrigger09153350": {
+    "cfpatched7bdf8ebf": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "cftrigger09153350CustomMessage",
+          "resourceName": "cfpatched7bdf8ebfCustomMessage",
           "triggerProvider": "Cognito",
           "attributes": [
             "Arn",
@@ -28,7 +78,7 @@
         },
         {
           "category": "function",
-          "resourceName": "cftrigger09153350PostConfirmation",
+          "resourceName": "cfpatched7bdf8ebfPostConfirmation",
           "triggerProvider": "Cognito",
           "attributes": [
             "Arn",
@@ -37,70 +87,20 @@
         }
       ],
       "customAuth": false,
-      "lastPushTimeStamp": "2021-04-30T05:33:43.932Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cftrigger-dev-234621-deployment/amplify-cfn-templates/auth/cftrigger09153350-cloudformation-template.yml",
-        "logicalId": "authcftrigger09153350"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cfpatched-dev-35621-deployment/amplify-cfn-templates/auth/cfpatched7bdf8ebf-cloudformation-template.yml",
+        "logicalId": "authcfpatched7bdf8ebf"
       },
+      "lastPushTimeStamp": "2021-04-30T09:20:29.018Z",
       "output": {
-        "UserPoolId": "us-east-1_GSsB9FPWB",
-        "AppClientIDWeb": "3i9hvm3av776j94b0jqs1ahtia",
-        "AppClientID": "5a25mdi225ck8vn8r8ts90fbto",
-        "IdentityPoolId": "us-east-1:c40d95a2-174b-4fe1-8c80-d87a4931a2c0",
-        "IdentityPoolName": "cftrigger09153350_identitypool_09153350__dev",
-        "UserPoolName": "cftrigger09153350_userpool_09153350"
+        "UserPoolId": "us-east-1_Zz1Ze2fJp",
+        "AppClientIDWeb": "2fnof9080fp9ga4hmkqqburrh7",
+        "AppClientID": "4kmp3gqid75svcehqfkvpmjdtb",
+        "IdentityPoolId": "us-east-1:29ca2705-1e05-4164-9bc1-98f5b699ef63",
+        "IdentityPoolName": "cfpatched7bdf8ebf_identitypool_7bdf8ebf__dev",
+        "UserPoolName": "cfpatched7bdf8ebf_userpool_7bdf8ebf"
       },
-      "lastPushDirHash": "xTXx+WsgS98AY1aK+aziGEmSiEk="
-    }
-  },
-  "function": {
-    "cftrigger09153350CustomMessage": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "lastBuildTimeStamp": "2021-04-30T05:32:33.602Z",
-      "lastPackageTimeStamp": "2021-04-30T05:32:33.635Z",
-      "distZipFilename": "cftrigger09153350CustomMessage-5336656c385a362b6642-build.zip",
-      "s3Bucket": {
-        "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-        "s3Key": "amplify-builds/cftrigger09153350CustomMessage-5336656c385a362b6642-build.zip"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cftrigger-dev-234621-deployment/amplify-cfn-templates/function/cftrigger09153350CustomMessage-cloudformation-template.json",
-        "logicalId": "functioncftrigger09153350CustomMessage"
-      },
-      "lastPushTimeStamp": "2021-04-30T05:33:43.939Z",
-      "output": {
-        "Region": "us-east-1",
-        "Arn": "arn:aws:lambda:us-east-1:381430693017:function:cftrigger09153350CustomMessage-dev",
-        "Name": "cftrigger09153350CustomMessage-dev",
-        "LambdaExecutionRole": "cftrigger09153350CustomMessage-dev"
-      },
-      "lastPushDirHash": "+db2rogE8NcuzB7fP5Vkync9fZY="
-    },
-    "cftrigger09153350PostConfirmation": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "lastBuildTimeStamp": "2021-04-30T05:26:02.945Z",
-      "lastPackageTimeStamp": "2021-04-30T05:26:03.091Z",
-      "distZipFilename": "cftrigger09153350PostConfirmation-742b71544d7941527079-build.zip",
-      "s3Bucket": {
-        "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-        "s3Key": "amplify-builds/cftrigger09153350PostConfirmation-742b71544d7941527079-build.zip"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cftrigger-dev-234621-deployment/amplify-cfn-templates/function/cftrigger09153350PostConfirmation-cloudformation-template.json",
-        "logicalId": "functioncftrigger09153350PostConfirmation"
-      },
-      "lastPushTimeStamp": "2021-04-30T05:33:43.936Z",
-      "output": {
-        "Region": "us-east-1",
-        "Arn": "arn:aws:lambda:us-east-1:381430693017:function:cftrigger09153350PostConfirmation-dev",
-        "Name": "cftrigger09153350PostConfirmation-dev",
-        "LambdaExecutionRole": "cftrigger09153350PostConfirmation-dev"
-      },
-      "lastPushDirHash": "9x3LrUmQMsh3MwG/tq9Djq2snP8="
+      "lastPushDirHash": "JD0nj/LnALHkpbrr64LBclJC5zU="
     }
   }
 }
