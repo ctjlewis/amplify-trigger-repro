@@ -1,5 +1,5 @@
 import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 
-const test = () => <AmplifySignOut />
+const LoginPage = () => <AmplifySignOut />
 
-export default withAuthenticator(test);
+export default withAuthenticator(LoginPage);

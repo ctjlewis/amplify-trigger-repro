@@ -9,4 +9,4 @@ const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 }
 
-export default withAuthenticator(MyApp);
+export default MyApp;
