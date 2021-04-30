@@ -18,16 +18,16 @@
       },
       "function": {
         "cftrigger09153350CustomMessage": {
-          "REDIRECTURL": "localhost",
+          "REDIRECTURL": "http://localhost:3000",
           "EMAILSUBJECT": "Confirm your email",
           "EMAILMESSAGE": "Click this link to confirm your account:",
           "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-          "s3Key": "amplify-builds/cftrigger09153350CustomMessage-733265366c4866735446-build.zip"
+          "s3Key": "amplify-builds/cftrigger09153350CustomMessage-5336656c385a362b6642-build.zip"
         },
         "cftrigger09153350PostConfirmation": {
           "GROUP": "users",
           "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
-          "s3Key": "amplify-builds/cftrigger09153350PostConfirmation-2b68707a4e6b5567796b-build.zip"
+          "s3Key": "amplify-builds/cftrigger09153350PostConfirmation-742b71544d7941527079-build.zip"
         }
       }
     }
