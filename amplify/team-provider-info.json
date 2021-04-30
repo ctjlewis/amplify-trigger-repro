@@ -1,0 +1,35 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cftrigger-dev-234621-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381430693017:role/amplify-cftrigger-dev-234621-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
+      "UnauthRoleName": "amplify-cftrigger-dev-234621-unauthRole",
+      "StackName": "amplify-cftrigger-dev-234621",
+      "StackId": "arn:aws:cloudformation:us-east-1:381430693017:stack/amplify-cftrigger-dev-234621/05a5ad60-a96f-11eb-963c-12b4aab3bd0b",
+      "AmplifyAppId": "d1zhxaps2q4i4c"
+    },
+    "categories": {
+      "auth": {
+        "cftriggerd0e2e9b5": {},
+        "cftrigger09153350": {}
+      },
+      "function": {
+        "cftrigger09153350CustomMessage": {
+          "REDIRECTURL": "localhost",
+          "EMAILSUBJECT": "Confirm your email",
+          "EMAILMESSAGE": "Click this link to confirm your account:",
+          "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
+          "s3Key": "amplify-builds/cftrigger09153350CustomMessage-733265366c4866735446-build.zip"
+        },
+        "cftrigger09153350PostConfirmation": {
+          "GROUP": "users",
+          "deploymentBucketName": "amplify-cftrigger-dev-234621-deployment",
+          "s3Key": "amplify-builds/cftrigger09153350PostConfirmation-2b68707a4e6b5567796b-build.zip"
+        }
+      }
+    }
+  }
+}
