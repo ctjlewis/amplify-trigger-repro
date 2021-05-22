@@ -10,19 +10,19 @@ working out-of-the-box.
 
 ## Instructions
 1. `yarn` to install dependencies
-2. `yarn dev` to start the Next dev server
-3. `amplify init` to initialize new project
+2. `amplify init` to initialize new project
     1. Source dir: `src`
-    2. Build dir: `out`
+    2. Distribution dir: `out`
     3. Build command: `next build`
     4. Start command: `next start` 
-4. `amplify add auth` to add auth (so Sign Up works)
+3. `amplify add auth` to add auth (so Sign Up works)
     1. Default configuration
     2. Username
     3. No, I am done (will enable advanced settings later)
-5. `amplify push` to push changes
+4. `amplify push` to push changes
     1. Creates Auth service
     2. Updates `aws-exports.js`
+5. `yarn dev` to start the Next dev server
 6. Go to [localhost:3000/login](http://localhost:3000/login)
     1. Create account
     2. **Success!**
